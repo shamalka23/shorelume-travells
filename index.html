@@ -50,7 +50,7 @@
 <footer class="footer"><div class="wrap"><div class="brand"><img src="shorelume_travells_logo.png" alt="Shorelume Travells logo"><span class="brand-text">SHORELUME<span>TRAVELLS</span></span></div><p>Discover Sri Lanka at your own pace.</p><p class="small" style="color:#b6d2e6">Custom private tours • Chauffeur travel • Island experiences</p><p class="small" style="color:#b6d2e6">© <span id="year"></span> Shorelume Travells. Add your registered business details before publication.</p></div></footer>
 <a class="btn btn-primary mobile-cta" id="mobileWa" href="#contact">Chat with us on WhatsApp</a>
 <script>
-const WHATSAPP_NUMBER="REPLACE_WITH_YOUR_WHATSAPP_NUMBER"; // Replace with country code + number, digits only.
+const WHATSAPP_NUMBER="94770344383"; // Replace with country code + number, digits only.
 function waUrl(message){if(!/^\d{8,15}$/.test(WHATSAPP_NUMBER)){alert("Website setup needed: replace WHATSAPP_NUMBER in the HTML with your business WhatsApp number, digits only.");return null;}return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);}
 document.querySelectorAll(".wa").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const url=waUrl("Hello Shorelume Travells! I would like to enquire about the "+a.dataset.car+" for a Sri Lanka tour. Please share availability and rates.");if(url)window.open(url,"_blank","noopener");}));
 ["mainWa","mobileWa"].forEach(id=>document.getElementById(id).addEventListener("click",e=>{e.preventDefault();const url=waUrl("Hello Shorelume Travells! I would like to plan a custom Sri Lanka tour. Please contact me with itinerary and vehicle options.");if(url)window.open(url,"_blank","noopener");}));
